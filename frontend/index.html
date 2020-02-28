@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <hea>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>A* Shortest Path</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- s<script src="js/map.js"></script> -->
+        <script src="js/peta.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNnzxae2AewMUN0Tt_fC3gN38goeLVdVE&libraries=places&callback=initMap" async defer></script>
+  </head>
+  <body>
+<!--     <div id="floating-card">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" id="cardTitle">Add Node</h5>
+                <p class="card-text" id="cardContent">Click on the road intersection or end-road to define the node.</p>
+                <input class="btn btn-primary" id="stateButton" onclick="nextState()" type=button value="Next: Add Edge">
+                <button class="btn btn-danger" id="deleteButton" onclick="deleteMarkers()" type=button value="Delete Markers">Delete All</button>
+              </div>
+            </div>
+          </div>
+        </div>  
+    </div> -->
+  <div id="floating-panel">
+    </div>
+    <!-- <input id="pac-input" class="form-control" type="text" placeholder="Search Place Here..."> -->
+    <div class="col-sm-10" id="map" style="float: left;"></div>
+    <div class="col-sm-2" style="background-color: pink;height: 100%;float: right;">
+      <div style="height: 10%;background-color: black">
+      </div>
+        <button style="display: inline-block;">a</button>
+    </div>
+
+<!--     <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -0.9151259, lng: 100.4604039},
+          zoom: 15
+        });
+      }
+    </script> -->
+  </body>
+</html>
